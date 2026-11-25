@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizon Évasion - Agence de Voyages</title>
+    <!-- CSS Bootstrap 5 -->
+    <link href="https://jsdelivr.net" rel="stylesheet">
+    <!-- Icônes Bootstrap -->
+    <link rel="stylesheet" href="https://jsdelivr.net">
+    <!-- Votre fichier CSS personnalisé -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. BARRE DE NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#"><i class="bi bi-airplane-engines me-2"></i>Horizon Évasion</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarVoyage">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarVoyage">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#accueil">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#circuits">Circuits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. SECTION PRINCIPALE (Hero) -->
+    <header id="accueil" class="hero-voyage d-flex align-items-center justify-content-center text-center text-white">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Explorez le Monde Sans Limites</h1>
+            <p class="lead mb-4">Des séjours inoubliables organisés sur mesure pour vous.</p>
+            <a href="#destinations" class="btn btn-light btn-lg text-primary fw-bold">Voir les destinations</a>
+        </div>
+    </header>
+
+    <!-- 3. SECTION DESTINATIONS (Grille + Cartes Bootstrap) -->
+    <section id="destinations" class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Nos Destinations Phares</h2>
+            <div class="row g-4">
+                <!-- Destination 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://unsplash.com" class="card-img-top" alt="Assinie">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Assinie-Mafia, Côte d'Ivoire</h5>
+                            <p class="card-text text-muted">Profitez des plages de sable doré, de la lagune paisible et des complexes balnéaires de charme.</p>
+                            <a href="#contact" class="btn btn-outline-primary mt-auto">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Destination 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://unsplash.com" class="card-img-top" alt="Paris">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Paris, France</h5>
+                            <p class="card-text text-muted">Découvrez la ville lumière, ses monuments emblématiques, ses musées et sa gastronomie.</p>
+                            <a href="#contact" class="btn btn-outline-primary mt-auto">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Destination 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://unsplash.com" class="card-img-top" alt="Dubaï">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Dubaï, Émirats Arabes Unis</h5>
+                            <p class="card-text text-muted">Entre gratte-ciels futuristes, shopping de luxe et safaris dans le désert.</p>
+                            <a href="#contact" class="btn btn-outline-primary mt-auto">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SECTION VISITES / CIRCUITS (Composant Accordéon Bootstrap) -->
+    <section id="circuits" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4">Nos Forfaits Touristiques</h2>
+            <div class="accordion shadow-sm" id="accordeonCircuits">
+                <!-- Forfait 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#circuit1">
+                            Circuit Découverte Balnéaire (4 Jours / 3 Nuits)
+                        </button>
+                    </h2>
+                    <div id="circuit1" class="accordion-collapse collapse show" data-bs-parent="#accordeonCircuits">
+                        <div class="accordion-body">
+                            <p>Séjour tout compris en bord de mer avec excursions en bateau sur la lagune, pension complète et activités nautiques incluses.</p>
+                            <a href="#contact" class="btn btn-sm btn-primary">Voir les détails</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Forfait 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#circuit2">
+                            Escapade Européenne : Paris & Bruxelles (7 Jours)
+                        </button>
+                    </h2>
+                    <div id="circuit2" class="accordion-collapse collapse" data-bs-parent="#accordeonCircuits">
+                        <div class="accordion-body">
+                            <p>Billets d'avion aller-retour, hôtel 4 étoiles en centre-ville, visites guidées et transfert en train rapide inclus.</p>
+                            <a href="#contact" class="btn btn-sm btn-primary">Voir les détails</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Forfait 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#circuit3">
+                            Aventure & Safari en Afrique de l'Est (6 Jours)
+                        </button>
+                    </h2>
+                    <div id="circuit3" class="accordion-collapse collapse" data-bs-parent="#accordeonCircuits">
+                        <div class="accordion-body">
+                            <p>Observation de la faune sauvage en véhicule 4x4 avec guide francophone et hébergement en lodge panoramique.</p>
+                            <a href="#contact" class="btn btn-sm btn-primary">Voir les détails</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. FORMULAIRE DE CONTACT -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4">Planifiez Votre Voyage</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form class="p-4 border rounded shadow-sm bg-white">
+                        <div class="mb-3">
+                            <label for="nomVoyage" class="form-label">Nom complet</label>
+                            <input type="text" class="form-control" id="nomVoyage" placeholder="Votre nom" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailVoyage" class="form-label">Adresse e-mail</label>
+                            <input type="email" class="form-control" id="emailVoyage" placeholder="exemple@email.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="destinationSouhaitee" class="form-label">Destination souhaitée</label>
+                            <select class="form-select" id="destinationSouhaitee" required>
+                                <option value="" selected disabled>Choisissez une destination...</option>
+                                <option value="assinie">Assinie-Mafia, Côte d'Ivoire</option>
+                                <option value="paris">Paris, France</option>
+                                <option value="dubai">Dubaï, Émirats Arabes Unis</option>
+                                <option value="autre">Autre destination</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="messageVoyage" class="form-label">Message</label>
+                            <textarea class="form-control" id="messageVoyage" rows="4" placeholder="Précisez vos dates et le nombre de voyageurs..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 fw-semibold">Demander un devis gratuit</button>
+                    </form>

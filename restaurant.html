@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le Délice d'Abidjan - Restaurant</title>
+  <!-- CSS Bootstrap 5 -->
+  <link href="https://jsdelivr.net" rel="stylesheet">
+  <!-- Icônes Bootstrap -->
+  <link href="https://jsdelivr.net" rel="stylesheet">
+  <!-- Fichier CSS personnalisé -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1. SECTION D'EN-TÊTE : Barre de navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-warning" href="#">Le Délice d'Abidjan</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#accueil">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#apropos">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 2. SECTION PRINCIPALE : Image de fond + Titre + Bouton -->
+  <header id="accueil" class="hero-restaurant d-flex align-items-center justify-content-center text-center text-white">
+    <div class="container">
+      <h1 class="display-3 fw-bold">Saveurs Authentiques & Gourmandes</h1>
+      <p class="lead mb-4">Découvrez le meilleur de la gastronomie locale et internationale dans un cadre chaleureux.</p>
+      <a href="#menu" class="btn btn-warning btn-lg fw-bold px-4">Découvrir notre Menu</a>
+    </div>
+  </header>
+
+  <!-- 3. SECTION MENU : Grille de 3 plats minimum -->
+  <section id="menu" class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Notre Menu</h2>
+      <div class="row g-4">
+        
+        <!-- Plat 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="https://unsplash.com" class="card-img-top" alt="Poulet Braisé">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="card-title mb-0">Poulet Braisé Royal</h5>
+                <span class="badge bg-warning text-dark fs-6">5 500 FCFA</span>
+              </div>
+              <p class="card-text text-muted">Poulet fermier mariné aux épices douces, braisé au feu de bois et servi avec son attiéké frais.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Plat 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="https://unsplash.com" class="card-img-top" alt="Poisson Grillé">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="card-title mb-0">Dorade Grillée du Chef</h5>
+                <span class="badge bg-warning text-dark fs-6">7 000 FCFA</span>
+              </div>
+              <p class="card-text text-muted">Dorade fraîche grillée à la perfection, accompagnée d'alloco doré et d'une sauce tomate épicée.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Plat 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="https://unsplash.com" class="card-img-top" alt="Filet de Bœuf">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="card-title mb-0">Filet de Bœuf au Poivre</h5>
+                <span class="badge bg-warning text-dark fs-6">8 500 FCFA</span>
+              </div>
+              <p class="card-text text-muted">Tendre filet de bœuf grillé, nappé d'une sauce crémeuse au poivre vert et légumes sautés.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. SECTION À PROPOS DE NOUS : Grille à deux colonnes -->
+  <section id="apropos" class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-md-6">
+          <img src="https://unsplash.com" class="img-fluid rounded shadow" alt="Salle du restaurant">
+        </div>
+        <div class="col-md-6">
+          <h2 class="fw-bold mb-3">À propos de nous</h2>
+          <p class="lead">Depuis plus de 10 ans, <strong>Le Délice d'Abidjan</strong> célèbre le plaisir du partage autour d'une cuisine généreuse.</p>
+          <p>Nos chefs sélectionnent chaque matin les meilleurs produits frais du marché pour vous offrir des plats savoureux qui allient traditions culinaires et touches modernes. Que ce soit pour un déjeuner d'affaires ou un dîner en famille, notre équipe vous accueille avec le sourire.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. SECTION CONTACT : Formulaire -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">Contactez-nous</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form class="p-4 border rounded bg-light shadow-sm">
+            <div class="mb-3">
+              <label for="nomResto" class="form-label">Nom complet</label>
+              <input type="text" class="form-control" id="nomResto" placeholder="Entrez votre nom" required>
+            </div>
+            <div class="mb-3">
+              <label for="emailResto" class="form-label">Adresse e-mail</label>
+              <input type="email" class="form-control" id="emailResto" placeholder="exemple@email.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="messageResto" class="form-label">Message ou réservation</label>
+              <textarea class="form-control" id="messageResto" rows="4" placeholder="Votre message..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark w-100">Envoyer le message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. PIED DE PAGE : Droits d'auteur et réseaux sociaux -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <div class="mb-3">
+        <a href="#" class="text-white me-3 fs-4"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white me-3 fs-4"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white fs-4"><i class="bi bi-whatsapp"></i></a>
+      </div>
+      <p class="mb-0">&copy; 2026 Le Délice d'Abidjan. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- JS Bootstrap 5 -->
+  <script src="https://jsdelivr.net"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+/* Défilement fluide lors du clic sur les liens du menu */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Section principale (Hero) du Restaurant */
+.hero-restaurant {
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1400') center/cover no-repeat;
+}
+
+/* Section principale (Hero) de l'Agence de Voyages */
+.hero-voyage {
+    height: 80vh;
+    background: linear-gradient(rgba(0, 35, 80, 0.55), rgba(0, 35, 80, 0.55)),
+                url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1400') center/cover no-repeat;
+}
+
+/* Uniformiser la hauteur des images dans les cartes */
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
